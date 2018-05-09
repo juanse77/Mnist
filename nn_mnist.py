@@ -101,8 +101,8 @@ while (mejora > 0.01 or accuracyAfter < 0.90) and epoch < 30:
     print("Epoch #:", epoch, "Precisión entrenamiento: ", accuracyAfter)
     print("Epoch #:", epoch, "Precisión validación: ", sess.run(accuracy, feed_dict={x: valid_x, y_: valid_y}))
 
-    aux_train = sess.run(loss, feed_dict={x: batch_xs, y_: batch_ys});
-    aux_valid = sess.run(loss, feed_dict={x: valid_x, y_: valid_y});
+    aux_train = sess.run(loss, feed_dict={x: batch_xs, y_: batch_ys})
+    aux_valid = sess.run(loss, feed_dict={x: valid_x, y_: valid_y})
 
     errorTrain.append(aux_train)
     errorValid.append(aux_valid)
